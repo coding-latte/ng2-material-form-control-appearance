@@ -1,3 +1,4 @@
+import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {
   MatDatepickerModule,
@@ -9,19 +10,16 @@ import {
   MatSelectModule
 } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppComponent } from './app.component';
+import { FillAppearanceDefaultComponent } from './fill-appearance-default/fill-appearance-default.component';
 
 const appearance: MatFormFieldDefaultOptions = {
   appearance: 'outline'
 };
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, FillAppearanceDefaultComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -40,4 +38,4 @@ const appearance: MatFormFieldDefaultOptions = {
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
