@@ -1,3 +1,4 @@
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,7 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
